@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using OpenBudget.Source.Forms;
 
 namespace OpenBudget
 {
@@ -29,6 +30,12 @@ namespace OpenBudget
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddAccountBtn_Click(object sender, EventArgs e)
+        {
+            AddAccountForm form = new AddAccountForm();
+            form.Show();
         }
     }
 }

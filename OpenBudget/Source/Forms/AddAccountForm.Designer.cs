@@ -1,6 +1,6 @@
 ﻿namespace OpenBudget.Source.Forms
 {
-    partial class AddAccount
+    partial class AddAccountForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ConfirmBtn = new System.Windows.Forms.Button();
+            this.AccountName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.AccountTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.BankComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CurrencyComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.OpeningBalance = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -50,23 +50,23 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ConfirmBtn
             // 
-            this.button2.Location = new System.Drawing.Point(395, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Confirm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ConfirmBtn.Location = new System.Drawing.Point(395, 218);
+            this.ConfirmBtn.Name = "ConfirmBtn";
+            this.ConfirmBtn.Size = new System.Drawing.Size(111, 40);
+            this.ConfirmBtn.TabIndex = 1;
+            this.ConfirmBtn.Text = "Confirm";
+            this.ConfirmBtn.UseVisualStyleBackColor = true;
+            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
-            // textBox1
+            // AccountName
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(515, 20);
-            this.textBox1.TabIndex = 2;
+            this.AccountName.Location = new System.Drawing.Point(128, 12);
+            this.AccountName.Name = "AccountName";
+            this.AccountName.Size = new System.Drawing.Size(515, 20);
+            this.AccountName.TabIndex = 2;
             // 
             // label1
             // 
@@ -88,13 +88,13 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Account Type:";
             // 
-            // comboBox1
+            // AccountTypeComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(128, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 21);
-            this.comboBox1.TabIndex = 6;
+            this.AccountTypeComboBox.FormattingEnabled = true;
+            this.AccountTypeComboBox.Location = new System.Drawing.Point(128, 46);
+            this.AccountTypeComboBox.Name = "AccountTypeComboBox";
+            this.AccountTypeComboBox.Size = new System.Drawing.Size(165, 21);
+            this.AccountTypeComboBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -106,13 +106,13 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Bank:";
             // 
-            // comboBox2
+            // BankComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(128, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 21);
-            this.comboBox2.TabIndex = 8;
+            this.BankComboBox.FormattingEnabled = true;
+            this.BankComboBox.Location = new System.Drawing.Point(128, 87);
+            this.BankComboBox.Name = "BankComboBox";
+            this.BankComboBox.Size = new System.Drawing.Size(250, 21);
+            this.BankComboBox.TabIndex = 8;
             // 
             // label4
             // 
@@ -124,13 +124,16 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Currency Type:";
             // 
-            // comboBox3
+            // CurrencyComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(128, 125);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(53, 21);
-            this.comboBox3.TabIndex = 10;
+            this.CurrencyComboBox.FormattingEnabled = true;
+            this.CurrencyComboBox.Items.AddRange(new object[] {
+            "USD",
+            "CAD"});
+            this.CurrencyComboBox.Location = new System.Drawing.Point(128, 125);
+            this.CurrencyComboBox.Name = "CurrencyComboBox";
+            this.CurrencyComboBox.Size = new System.Drawing.Size(53, 21);
+            this.CurrencyComboBox.TabIndex = 10;
             // 
             // label5
             // 
@@ -142,31 +145,31 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Opening Balance: ";
             // 
-            // textBox2
+            // OpeningBalance
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 168);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 20);
-            this.textBox2.TabIndex = 12;
+            this.OpeningBalance.Location = new System.Drawing.Point(147, 168);
+            this.OpeningBalance.Name = "OpeningBalance";
+            this.OpeningBalance.Size = new System.Drawing.Size(62, 20);
+            this.OpeningBalance.TabIndex = 12;
             // 
-            // AddAccount
+            // AddAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 267);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.OpeningBalance);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.CurrencyComboBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.BankComboBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.AccountTypeComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AccountName);
+            this.Controls.Add(this.ConfirmBtn);
             this.Controls.Add(this.button1);
-            this.Name = "AddAccount";
+            this.Name = "AddAccountForm";
             this.Text = "Add An Account";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,16 +179,16 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button ConfirmBtn;
+        private System.Windows.Forms.TextBox AccountName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox AccountTypeComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox BankComboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox CurrencyComboBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox OpeningBalance;
     }
 }
