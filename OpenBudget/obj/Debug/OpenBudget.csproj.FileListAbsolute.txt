@@ -12,3 +12,17 @@ D:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\
 D:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\Newtonsoft.Json.xml
 D:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.csproj.CopyComplete
 D:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.Source.Forms.AddAccountForm.resources
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\OpenBudget.exe.config
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\OpenBudget.exe
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\OpenBudget.pdb
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\Newtonsoft.Json.dll
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\bin\Debug\Newtonsoft.Json.xml
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.csprojAssemblyReference.cache
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.Form1.resources
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.Properties.Resources.resources
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.Source.Forms.AddAccountForm.resources
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.csproj.GenerateResource.cache
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.csproj.CoreCompileInputs.cache
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.csproj.CopyComplete
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.exe
+E:\Personal Files\Documents\Visual Studio 2017\open-budget\OpenBudget\obj\Debug\OpenBudget.pdb
