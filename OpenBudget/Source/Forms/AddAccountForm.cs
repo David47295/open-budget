@@ -25,7 +25,7 @@ namespace OpenBudget.Source.Forms
         private void ConfirmBtn_Click(object sender, EventArgs e)
         {
             if (AccountName.Text == "" ||
-                OpeningBalance.Text == "" ||)
+                OpeningBalance.Text == "")
             {
                 return;
             }
